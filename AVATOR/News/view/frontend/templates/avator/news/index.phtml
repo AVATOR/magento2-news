@@ -1,0 +1,13 @@
+<?php /** @var $block \AVATOR\News\Block\News\Index */ ?>
+<ul class="news-list">
+    <?php /** @var $news \AVATOR\News\Model\News */ ?>
+    <?php foreach ($block->getNews() as $news): ?>
+        <li class="news-list-item">
+            <h3 class="news-item-title">
+                <a href="<?php echo $this->getUrl('news/view/', ['id' => $news->getId()]); ?>">
+                    <?php echo $news->getTitle() ?>
+                </a>
+            </h3>
+        </li>
+    <?php endforeach; ?>
+</ul>

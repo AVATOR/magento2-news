@@ -1,0 +1,13 @@
+<?php
+/** @var $block \AVATOR\News\Block\View */
+/** @var $news \AVATOR\News\Model\News */
+$news = $block->getNews();
+?>
+<h1 class="news-post-item-title"><?php echo $news->getTitle() ?></h1>
+
+<span>Created at: <?php echo $news->getCreatedAt(); ?></span>
+<br/>
+<br/>
+<div class="news-post-item-content">
+    <?php echo $news->getDescription(); ?>
+</div>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="Magento_Backend::content">
+                    <resource id="AVATOR_News::news_content" title="News" sortOrder="10" >
+                        <resource id="AVATOR_News::news" title="News" sortOrder="40">
+                            <resource id="AVATOR_News::save" title="Save News" sortOrder="10" />
+                            <resource id="AVATOR_News::post_delete" title="Delete News" sortOrder="20" />
+                        </resource>
+                    </resource>
+                </resource>
+
+                <resource id="Magento_Backend::stores">
+                    <resource id="Magento_Backend::stores_settings">
+                        <resource id="Magento_Config::config">
+                            <resource id="AVATOR_News::config" title="AVATOR News Section" sortOrder="100" />
+                        </resource>
+                    </resource>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>

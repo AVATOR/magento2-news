@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+    <widget id="avator_news_last_news" class="AVATOR\News\Block\Widget\News">
+        <label translate="true">AVATOR Last News</label>
+        <description translate="true">Show last created news</description>
+        <parameters>
+            <parameter name="news_count" xsi:type="text" required="true" visible="true">
+                <label translate="true">Number of News to Display</label>
+                <value>5</value>
+            </parameter>
+            <parameter name="template" xsi:type="select" visible="true" required="true" sort_order="10">
+                <label translate="true">Template</label>
+                <options>
+                    <option name="default" value="widget/avator_news/default.phtml" selected="true">
+                        <label translate="true">AVATOR News Default Template</label>
+                    </option>
+                </options>
+            </parameter>
+        </parameters>
+    </widget>
+</widgets>

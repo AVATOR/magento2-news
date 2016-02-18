@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="AVATOR_News::news_content" title="News" module="AVATOR_News" sortOrder="50"
+             parent="Magento_Backend::content" resource="AVATOR_News::news_content" />
+        <add id="AVATOR_New::post" title="News" module="AVATOR_News" sortOrder="0"
+             parent="AVATOR_News::news_content" action="news/news" resource="AVATOR_News::news"/>
+    </menu>
+</config>
